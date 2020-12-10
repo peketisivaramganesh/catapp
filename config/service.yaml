@@ -2,8 +2,8 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    app: catapp
-  name: catapp
+    app: catapp-ganesh
+  name: catapp-ganesh
 spec:
   ports:
     - name: http
@@ -11,4 +11,4 @@ spec:
       targetPort: 3000
       protocol: TCP
   selector:
-    app: catapp
+    app: catapp-ganesh
