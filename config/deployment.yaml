@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: catapp-ganesh
+  name: catapp-sivaram
   labels:
-    app: catapp-ganesh
+    app: catapp-sivaram
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: catapp-ganesh
+      app: catapp-sivaram
   template:
     metadata:
       labels:
-        app: catapp-ganesh
+        app: catapp-sivaram
     spec:
       containers:
-        - name: catapp-ganesh
+        - name: catapp-sivaram
           # This image will be overwritten by the update-deployment Task
           image: catapp:latest
           imagePullPolicy: Always
